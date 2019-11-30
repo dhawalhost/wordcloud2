@@ -4,7 +4,7 @@
       id="word_cloud"
       class="word_cloud"
       width="1300px"
-      height="600px"
+      height="700px"
     ></canvas>
   </div>
 </template>
@@ -91,7 +91,7 @@ export default {
     // }, 0);
     // console.log(WordCloud);
     // WordCloud.minFontSize = "500px";
-    console.log(WordCloud.minFontSize);
+    // console.log(WordCloud.minFontSize);
     let newlist = [];
     for (var i in this.list) {
       newlist.push([this.list[i]["word"], this.list[i]["freq"]]);
@@ -100,7 +100,7 @@ export default {
       list: newlist,
       gridSize: 18,
       weightFactor: 3,
-      fontFamily: "Average, Times, san-serif",
+      fontFamily: "Fredoka One,cursive",
       color: "random-dark",
       // hover: window.drawBox,
       // click: function(item) {
@@ -111,9 +111,14 @@ export default {
   }
 };
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@font-face {
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../public/fonts/fredoka-one.woff2") format("woff2");
+}
 h3 {
   margin: 40px 0 0;
 }
