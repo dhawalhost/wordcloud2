@@ -106,7 +106,7 @@ export default {
       // click: function(item) {
       //   alert(item[0] + ": " + item[1]);
       // },
-      backgroundColor: "#f0f0f0"
+      backgroundColor: "#fff"
     });
   }
 };

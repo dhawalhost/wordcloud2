@@ -111,9 +111,9 @@ export default {
     };
   },
   mounted() {
-    console.log(WordCloud);
+    // console.log(WordCloud);
     // WordCloud.minFontSize = "500px";
-    console.log(WordCloud.minFontSize);
+    // console.log(WordCloud.minFontSize);
     let newlist = [];
     for (var i in this.list) {
       newlist.push([this.list[i]["word"], this.list[i]["freq"]]);
@@ -128,7 +128,7 @@ export default {
       // click: function(item) {
       //   alert(item[0] + ": " + item[1]);
       // },
-      backgroundColor: "#f0f0f0"
+      backgroundColor: "#000000"
     });
   }
 };
